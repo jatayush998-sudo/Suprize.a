@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#180b18">
+  <meta name="description" content="A little Diwali surprise made with love.">
+  <title>Happy Diwali Nishthu ❤️</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="background-glow"></div>
+  <div class="stars"></div>
+  <div class="floating-hearts" id="floatingHearts"></div>
+  <div class="ambient-glow"></div>
+  <canvas id="fireworks"></canvas>
+
+  <div class="top-label">✦ A LITTLE SURPRISE MADE JUST FOR YOU ✦</div>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="https://files.catbox.moe/zuigyn.mp3" type="audio/mpeg">
+  </audio>
+
+  <main class="website">
+
+    <!-- PAGE 1: HOME -->
+    <section class="page active" id="home">
+
+      <div class="diya-row">
+        <span>🪔</span>
+        <span class="tiny-sparkle">✦</span>
+        <span>🪔</span>
+      </div>
+
+      <p class="eyebrow">A FESTIVAL OF LIGHT & HAPPINESS</p>
+
+      <h1 class="home-heading">
+        Happy Diwali<br>
+        <span>myy nishthu babyyy</span>
+      </h1>
+
+      <div class="gold-line"></div>
+
+      <p class="intro">
+        A little surprise, a little magic,<br>
+        and lots of happiness made just for you.
+      </p>
+
+      <p class="small-note">Some moments are special because of the people in them. ❤️</p>
+
+      <button class="gold-button" id="beginSurpriseButton" data-go="celebration">
+        Begin Your Surprise <span>✧</span>
+      </button>
+
+      <div class="bottom-decoration">✦ &nbsp; ✧ &nbsp; ✦</div>
+
+      <p class="made-by">made by aj😉❤️</p>
+    </section>
+
+
+    <!-- PAGE 2: FIRST PHOTO + LONG HEARTFELT MESSAGE -->
+    <section class="page" id="celebration">
+
+      <p class="eyebrow">A BEAUTIFUL MOMENT</p>
+
+      <h2>A Little Smile<br><span>For My Favourite Person</span></h2>
+
+      <div class="photo-frame">
+        <img
+          src="https://i.ibb.co/Hp4hvJJX/9-BA5-BC84-E747-43-B6-93-A3-AF0564-CC3-F8-D.jpg"
+          alt="A special memory"
+          loading="lazy">
+      </div>
+
+      <div class="glass-card">
+
+        <div class="card-decoration">✧</div>
+
+        <p>
+          Meri pyaari babyyy girl, meri princess… I love you so, so much, betuuu. ❤️
+        </p>
+
+        <p>
+          You are genuinely one of the sweetest parts of my life.
+          I hope you never forget how special you are to me.
+          You have such a beautiful heart, and I wish you could
+          see yourself the way I see you.
+        </p>
+
+        <p>
+          I want you to feel loved, valued, respected and appreciated,
+          not just today but every single day. I may not always have
+          the perfect words, but one thing will never change —
+          I am always here for you, through your happy days,
+          your difficult moments and everything in between.
+        </p>
+
+        <p>
+          I wish I could be there beside you today, celebrating
+          every little moment together. But until that happens,
+          just remember that you are always in my thoughts.
+        </p>
+
+        <p>
+          And meri jaan, hamesha yaad rakhna,
+          tu mere liye bohot special hai. ❤️
+        </p>
+
+        <p>
+          I hope this Diwali brings you endless happiness,
+          beautiful memories and everything your heart wishes for.
+        </p>
+
+        <p class="highlight-message">
+          I love youuu so muchhh, my babyyyy.
+          Happy Diwali, princess. ❤️🪔
+        </p>
+
+        <div class="card-decoration">✧</div>
+
+      </div>
+
+      <button class="gold-button" data-go="letter">Continue ✨</button>
+      <button class="text-button" data-go="home">← Back</button>
+    </section>
+
+
+    <!-- PAGE 3: LETTER -->
+    <section class="page" id="letter">
+
+      <p class="eyebrow">A MESSAGE FROM THE HEART</p>
+
+      <h2>A Little Letter<br><span>For You</span></h2>
+
+      <div class="envelope-wrap">
+        <div class="envelope">
+          <div class="envelope-back"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-front"></div>
+          <div class="envelope-heart">❤️</div>
+        </div>
+      </div>
+
+      <p class="intro">
+        There's something special<br>
+        waiting for you inside.
+      </p>
+
+      <button class="gold-button" data-go="message">
+        Read My Message ❤️
+      </button>
+
+      <button class="text-button" data-go="celebration">← Back</button>
+    </section>
+
+
+    <!-- PAGE 4: SECOND PHOTO + SHORT DIWALI MESSAGE -->
+    <section class="page" id="message">
+
+      <p class="eyebrow">JUST FOR YOU</p>
+
+      <h2>Dear <span>Nishthu</span> ❤️</h2>
+
+      <div class="photo-frame">
+        <img
+          src="https://i.ibb.co/ycmNBn5s/F324-E4-C6-AC33-46-A9-A394-399-FA0677-DF7.jpg"
+          alt="A special memory together"
+          loading="lazy">
+      </div>
+
+      <div class="glass-card">
+
+        <div class="card-decoration">✧</div>
+
+        <p>
+          Happy Diwali meriii jaan ❤️🪔
+        </p>
+
+        <p>
+          I wish ki mein abhii waha hotaa tere pass tuu
+          or mein sath mee celebrate karteeee betuuu❤️😚
+        </p>
+
+        <p class="highlight-message">
+          apan sath me fatakee🎇 fodhteeeee😚😚💗
+        </p>
+
+        <div class="card-decoration">✧</div>
+
+      </div>
+
+      <button class="gold-button" data-go="wishes">
+        One More Surprise ✨
+      </button>
+
+      <button class="text-button" data-go="letter">← Back</button>
+    </section>
+
+
+    <!-- PAGE 5: WISHES -->
+    <section class="page" id="wishes">
+
+      <p class="eyebrow">MY WISHES FOR YOU</p>
+
+      <h2>May Your Life<br><span>Always Shine</span></h2>
+
+      <div class="wish-grid">
+
+        <div class="wish-card">
+          <div>✨</div>
+          <h3>Happiness</h3>
+          <p>May your smile never fade and your heart always stay happy.</p>
+        </div>
+
+        <div class="wish-card">
+          <div>🌸</div>
+          <h3>Beautiful Moments</h3>
+          <p>May life give you memories that you will always cherish.</p>
+        </div>
+
+        <div class="wish-card">
+          <div>🌟</div>
+          <h3>Success</h3>
+          <p>May every dream slowly turn into something beautiful.</p>
+        </div>
+
+        <div class="wish-card">
+          <div>🪔</div>
+          <h3>Peace</h3>
+          <p>May your days be peaceful and your future bright.</p>
+        </div>
+
+      </div>
+
+      <p class="intro">
+        No matter what, always remember<br>
+        you deserve happiness and good things.
+      </p>
+
+      <button class="gold-button" data-go="surprise">
+        A Special Surprise ❤️
+      </button>
+
+      <button class="text-button" data-go="message">← Back</button>
+    </section>
+
+
+    <!-- PAGE 6: SINGLE ROSE -->
+    <section class="page" id="surprise">
+
+      <p class="eyebrow">A LITTLE BEAUTY FOR YOU</p>
+
+      <h2>Just One Rose<br><span>For You 🌹</span></h2>
+
+      <div class="rose-scene" id="flowerScene" aria-hidden="true">
+        <div class="rose-glow"></div>
+        <div class="rose">
+          <div class="rose-stem"></div>
+          <div class="rose-leaf rose-leaf-left"></div>
+          <div class="rose-leaf rose-leaf-right"></div>
+          <div class="rose-bloom">
+            <div class="rose-petal petal-back"></div>
+            <div class="rose-petal petal-left"></div>
+            <div class="rose-petal petal-right"></div>
+            <div class="rose-petal petal-top"></div>
+            <div class="rose-petal petal-inner"></div>
+            <div class="rose-core"></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="intro">
+        One rose, one little wish:<br>
+        may your life always bloom with happiness.
+      </p>
+
+      <button class="gold-button" data-go="final">
+        One Last Thing ✨
+      </button>
+
+      <button class="text-button" data-go="wishes">← Back</button>
+    </section>
+
+
+    <!-- PAGE 7: FINAL -->
+    <section class="page" id="final">
+
+      <div class="final-diya">🪔</div>
+
+      <p class="eyebrow">A LITTLE SOMETHING SPECIAL</p>
+
+      <h1 class="final-heading">
+        You Make<br>
+        <span>Life Brighter</span>
+      </h1>
+
+      <div class="gold-line"></div>
+
+      <p class="final-message">
+        Happy Diwali, myy nishthu babyyy ❤️
+        <br><br>
+        May this festival bring endless happiness,
+        beautiful memories, peaceful days and
+        countless reasons to smile.
+        <br><br>
+        Keep shining, always.
+      </p>
+
+      <div class="big-heart">❤️</div>
+
+      <p class="signature">With lots of love and good wishes ✨</p>
+
+      <button class="gold-button" id="fireworkButton">
+        Celebrate Again 🎆
+      </button>
+
+      <button class="text-button" data-go="home">
+        ↻ Start Again
+      </button>
+    </section>
+
+  </main>
+
+  <div class="footer">MADE WITH ❤️ & A LITTLE MAGIC</div>
+
+</body>
+</html>
